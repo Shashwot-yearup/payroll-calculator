@@ -23,6 +23,11 @@ public class PayRollCalculator {
                 double hoursWorked = Double.parseDouble(pipe[2]);
                 double payRate = Double.parseDouble(pipe[3]);
             }
+
+            //create an employee object
+            Employee employee = new Employee(employeeId, name, hoursWored, payRate);
+
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

@@ -44,4 +44,10 @@ public class Employee {
     public void setPayRate(int payRate) {
         this.payRate = payRate;
     }
+
+
+    //does the math for the grosspay
+    public double GetGrossPay(){
+        return hoursWorked * payRate;
+    }
 }
