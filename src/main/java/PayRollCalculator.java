@@ -16,6 +16,12 @@ public class PayRollCalculator {
             while ((line = reader.readLine()) != null){
 
                 String[] pipe = line.split("\\|");// splites by the pipe
+
+                //pares its to is appropriate data types
+                int employeeId = Integer.parseInt(pipe[0]);
+                String name = pipe[1];
+                double hoursWorked = Double.parseDouble(pipe[2]);
+                double payRate = Double.parseDouble(pipe[3]);
             }
         } catch (Exception e) {
             throw new RuntimeException(e);
